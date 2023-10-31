@@ -1,1 +1,110 @@
-/* Here we are gonna define the font, size, and MECHI is gonna do the header and footer and background that its gonna apply for all the pages. */
+/*HERE mechi is gonna add the code that applies for all the pages. Please DO NOT change it.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for the body and other elements */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: #FCFCFC;
+}
+
+#background {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Header (The thin one) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121F56;
+    height: 40px;
+    padding: 0 10px;
+
+}
+
+/* Second header (the big one)*/
+.second-header {
+    height: 140px;
+    background: linear-gradient(to right, #162082, #0F1447);
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin-left: 30px;
+}
+
+.header-content h1,
+.header-content p {
+    margin: 1px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #162082, #0F1447); 
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.text-in-footer {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 15px;
+}
+
+/*icons*/
+/* Style for Font Awesome icons */
+.fa-house, .fa-arrow-left {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.fa-house::before, .fa-arrow-left::before {
+    font-size: 32px;
+    color: transparent;
+    background: linear-gradient(162deg, #162082, #eb0223);
+    -webkit-background-clip: text;
+    background-clip: text;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
