@@ -1,15 +1,18 @@
 .card-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     grid-gap: 10px;
-    /*grid-auto-rows: 700px;*/
-    max-width: 900px; 
+    grid-auto-rows: 3%;
+    grid-auto-flow: inherit;
+    max-width: 950px;
     margin: 50px auto;
+    
 }
 
 
 .thin-card, .medium-rectangle, .medium-square, .medium-square2, .small-square, .big-square {
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #F0F1F9 ;
 
 }
 
@@ -19,40 +22,39 @@
     background-color: orange;
     grid-column: span 6;
     grid-row: 1; 
+    margin-top: 12px;
 }
 
 .medium-rectangle {
     height: 180px;
-    background-color: lightgray;
     grid-column: span 6; 
     grid-row: 2;
 }
 
 .medium-square {
     height: 200px; 
-    background-color: lightblue;
     grid-column: span 3;
     grid-row: 3;
+    margin-top: 128%;
 }
 
 .medium-square2 {
     height: 200px; 
-    background-color: lightblue;
     grid-column: span 3;
-    grid-row: 5;
+    grid-row: 4;
+    margin-top: 36%;
 }
 
 .big-square {
-    height: 300px; 
-    background-color: lightgreen;
+    height: 351px; 
     grid-column: span 4;
     grid-row: 3;
-    margin-top: 110px; 
+    margin-top: 55%;
+    
 }
 
 .small-square {
-    height: 207px; 
-    background-color: lightcoral;
+    height: 240px; 
     grid-column: span 2; 
     grid-row: 2;
 }
