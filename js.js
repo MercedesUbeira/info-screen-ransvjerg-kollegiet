@@ -12,3 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
         requestAnimationFrame: true
     });
 });
+
+// JavaScript code for the 404 error page
+
+// Function to handle the "GO HOME" button click
+function goHome() {
+    window.location.href = 'home.html';
+}
+
+// Attach a click event listener to the "GO HOME" button
+document.addEventListener('DOMContentLoaded', function () {
+    const goHomeButton = document.querySelector('.go-home-button');
+    if (goHomeButton) {
+        goHomeButton.addEventListener('click', goHome);
+    }
+});
