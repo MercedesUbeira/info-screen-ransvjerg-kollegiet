@@ -1,16 +1,13 @@
-
-
-
 //carousel NOT WORKING YET
 
-document.addEventListener("DOMContentLoaded", function() {
-    var carouselTrack = document.querySelector('.carousel-track');
-    new Dragdealer(carouselTrack, {
-        steps: 3,
-        speed: 0.3,
-        loose: true,
-        requestAnimationFrame: true
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  var carouselTrack = document.querySelector(".carousel-track");
+  new Dragdealer(carouselTrack, {
+    steps: 3,
+    speed: 0.3,
+    loose: true,
+    requestAnimationFrame: true,
+  });
 });
 
 // JavaScript code for the 404 error page
