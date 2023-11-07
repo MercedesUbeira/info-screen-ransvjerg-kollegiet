@@ -12,14 +12,14 @@
 
 .thin-card, .medium-rectangle, .medium-square, .medium-square2, .small-square, .big-square {
     border-radius: 5px;
-    background-color: #F0F1F9 ;
+    background-color: #6B7CD9 ;
 
 }
 
 
 .thin-card {
     height: 23px; 
-    background-color: orange;
+    background-color: #AF093C;
     grid-column: span 6;
     grid-row: 1; 
     margin-top: 12px;
