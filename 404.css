@@ -1,80 +1,57 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #121F56;
-    padding: 0 10px;
-    width: 100%;
-}
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom right, #1E2D9C, #101A46);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
 }
 
-h1, h3, h5 {
+.container {
+    max-width: m;
+}
+
+h1, h3, h5, a {
     color: #FFFFFF;
     font-family: Helvetica, sans-serif;
+    font-weight: normal;
     text-align: left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
+    margin-left: 20%;
+}
+
+.background-404 {
+    background: linear-gradient(to bottom right, #1E2D9C, #101A46);
+    display: block;
+    height: 100vh;
+    
+    
+}
+
+.general-container {display: flex;}
+
+.left-side {
+    justify-content: left;
 }
 
 h1 {
     margin-right: 350px;
-    margin-top: 200px;
+    margin-top: 15%;
     font-size: 72px;
     font-weight: bold;
 }
 
 h3 {
     font-size: 32px;
-    font-weight: normal;
 }
 
 h5 {
     font-size: 22px;
-    font-weight: normal;
 }
 
 .go-home-button {
     background: #E8006B;
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 14px;
     color: #FFFFFF;
     text-decoration: none;
-    border-radius: 4px;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 130px;
-    height: 50px;
-}
-
-.go-home-button:hover {
-    background: #FF3366;
-}
-
-/* header to span full width */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #121F56;
-    padding: 0 10px;
-    width: 100%;
-}
-
-/* Position the cloud image at the bottom right corner */
-.cloud-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 100%;
-    z-index: 0;
+    border-radius: 5px;
+    margin-left: 8px;
+    padding: 5px 5px 5px 5px;
 }
 
 /* Position the rocket image above the cloud image */
@@ -88,16 +65,26 @@ header {
 
 /* Add the animation to the animation-container */
 .animation-container {
-    position: relative;
-    animation: rocketAnimation 10s ease-in-out; 
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    animation: rocketAnimation 10s ease-in-out;
     animation-fill-mode: forwards;
+}
+
+.cloud-image {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
 }
 
 @keyframes rocketAnimation {
     0% {
-        right: -100px; /* Initial position outside the viewport */
+        bottom: -100px; /* Initial position outside the viewport */
     }
     100% {
-        right: 50%; /* Final position in the middle of the page */
+        bottom: 50%; /* Final position in the middle of the page */
     }
 }
